@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2><a href="index.html">Wróć do menu</a></h2><br>
+        Dzielenie wielomianów<br>
+        <input type="number" id="x5">x5
+        <input type="number" id="x4">x4
+        <input type="number" id="x3">x3
+        <input type="number" id="x2">x2
+        <input type="number" id="x1">x
+        <input type="number" id="o"><br>
+        podzielić na 
+        <input type="number" id="y1">x
+        <input type="number" id="y2"><br>
+
+        <input type="button" onclick="licz()" value="Oblicz">
+
+        <p id="wynik"></p><br><br>
+        Strone i skrypt wykonał Wiktor Zieliński 2p
+
+    </main>
+    <script>
+        function licz(){
+            let x5=document.getElementById("x5").value
+            let x4=document.getElementById("x4").value
+            let x3=document.getElementById("x3").value
+            let x2=document.getElementById("x2").value
+            let x1=document.getElementById("x1").value
+            let o=document.getElementById("o").value
+            let y1=document.getElementById("y1").value
+            let y2=document.getElementById("y2").value
+
+
+            
+                let a5=x5/y1 //wynik x5   1
+                let b5=a5*y2  //2
+                let c5=x4-b5   //3
+                let a4=c5/y1   //wynik x4 ///1
+                let b4=a4*y2    //2
+                let c4=x3-b4    //3
+                let a3=c4/y1 //wynik x3 //1
+                let b3=a3*y2    //2
+                let c3=x2-b3      //3
+                let a2=c3/y1 //wynik x2 //1
+                let b2=a2*y2    //2
+                let c2=x1-b2      //3
+                let a1=c2/y1 //wynik x1 //1
+                let b1=a1*y2    //2
+                let c1=o-b1      //3 reszta chyba
+                let a0=c1/y1 //wynik 1 //1
+                let b0=a0*y2    //2
+                let c0=o-b1      //3
+
+                wynik.innerHTML="wynik to ("+y1+"x "+y2+")("+a5+"x<sup>5</sup> "+a4+"x<sup>4</sup> "+a3+"x<sup>3</sup> "+a2+"x<sup>2</sup> "+a1+"x)+"+c1;
+
+            
+
+
+        }
+    </script>
+</body>
+</html>
