@@ -10,10 +10,10 @@
     <main>
         <h2><a href="index.html">Wróć do menu</a></h2><br>
         Dzielenie wielomianów<br>
-        <input type="number" id="x5">x5
-        <input type="number" id="x4">x4
-        <input type="number" id="x3">x3
-        <input type="number" id="x2">x2
+        <input type="number" id="x5">x<sup>5</sup>
+        <input type="number" id="x4">x<sup>4</sup>
+        <input type="number" id="x3">x<sup>3</sup>
+        <input type="number" id="x2">x<sup>2</sup>
         <input type="number" id="x1">x
         <input type="number" id="o"><br>
         podzielić na 
@@ -58,7 +58,7 @@
                 let b0=a0*y2    //2
                 let c0=o-b1      //3
 
-                wynik.innerHTML="wynik to ("+y1+"x "+y2+")("+a5+"x<sup>5</sup> "+a4+"x<sup>4</sup> "+a3+"x<sup>3</sup> "+a2+"x<sup>2</sup> "+a1+"x)+"+c1;
+                wynik.innerHTML="wynik to ("+y1+"x + "+y2+")("+a5+"x<sup>4</sup> "+a4+"x<sup>3</sup> "+a3+"x<sup>2</sup> "+a2+"x "+a1+")+"+c1;
 
             
 
